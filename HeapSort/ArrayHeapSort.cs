@@ -2,8 +2,6 @@ namespace HeapSort;
 
 public class ArrayHeapSort<T> where T : IComparable<T> {
     public void Sort(T[] arr) {
-        //TODO null checks and stuff
-        
         for (var c = arr.Length - 1; c >= 0; c--) {
             Heapify(arr, c);
             (arr[c], arr[0]) = (arr[0], arr[c]);

@@ -2,7 +2,6 @@ namespace HeapSort;
 
 public class RecursiveHeapSort<T> where T : IComparable<T> {
     public void Sort(T[] arr) {
-        //TODO null checks and stuff
         var head = Treeify(arr);
         for (var c = arr.Length; c > 0; c--) {
             Heapify(head);
